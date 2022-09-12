@@ -83,12 +83,12 @@
 	  <script>
     function mySwipeFunction(event, direction, distance, duration, fingerCount, fingerData, currentDirection){
                             var sb = Metro.getPlugin("#sb1", "sidebar");
-                            if (direction === "right") {
+                            if (direction === "down") {
                                 if (!sb.isOpen()) {
                                     sb.open();
                                 }
                             }
-                            if (direction === "left") {
+                            if (direction === "up") {
                                 if (sb.isOpen()) {
                                     sb.close();
                                 }
