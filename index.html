@@ -36,7 +36,7 @@
 </style>
 
   </head>
-  <body>
+  <body data-role="touch" data-on-swipe-down="mySwipeFunction">
 	<nav class="navbar bg-light fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Offcanvas navbar</a>
@@ -79,6 +79,10 @@
 </nav>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/switch.js"></script>
-    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js">
+	$("body").touch({
+    onSwipeLeft: function(...){...}
+});  
+    </script>
   </body>
 </html>
